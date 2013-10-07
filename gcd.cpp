@@ -20,17 +20,17 @@ int main(){
     int a, b;
     while(1){
 	char temp;
-        cout << "Please input a and b: " << endl;
+        cout << "请输入a和b：" << endl;
         cin >> a >> b;
         a = abs(a);
         b = abs(b);
         if(a == 0 && b == 0){  //当两个数都是0的时候求最大公因数无意义
-            cout << "Please input two Nonzero numbers." << endl;
+            cout << "请输入两个不全为0的数" << endl;
             continue;
         }
         int ans = gcd(a, b);
-        cout << "The gcd of a and b is : " << ans << endl;
-	cout << "if you want quit, type 'q', type 'c' to continue" << endl;
+        cout << a << "和" << b << "的最大公约数是：" << ans << endl;
+	cout << "退出请输入'q'，继续请输入'c'" << endl;
 	cin >> temp;
 	if (temp == 'q')
 	    return 0;
