@@ -56,6 +56,10 @@ int main(){
 	cin >> temp;
 	if (temp == 'q')
 	    return 0;
+	else if (temp == 'c')
+	    continue;
+	else 
+	    cout<<"The input is wrong!"<<endl;
     }
     return 0;
 }
